@@ -5,6 +5,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Link from "@material-ui/core/Link";
 
 import { cardStyles } from "../styles";
 
@@ -12,6 +13,8 @@ const CardComponent = (props) => {
   const useStyles = makeStyles(cardStyles);
   const classes = useStyles();
   const { title, links } = props;
+
+  // console.log(links);
 
   return (
     <Card className={classes.root}>
@@ -21,9 +24,17 @@ const CardComponent = (props) => {
         </Typography>
 
         {links.map((singleLink) => {
+          // console.log("SINGLELINK", singleLink);
           return (
             <Typography variant="body2" component="p" key={singleLink.id}>
-              {singleLink.link}
+              <Link
+                href={singleLink.link}
+                target="_blank"
+                // onClick={preventDefault()}
+                color="inherit"
+              >
+                {singleLink.name}
+              </Link>
             </Typography>
           );
         })}

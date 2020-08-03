@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 
-import { cardData } from "../src/data/cardData";
+import { cardData1, cardData2, cardData3 } from "../src/data/cardData";
 import CardComponent from "./components/CardComponent";
 
 // 1. kolommen, cards
@@ -26,38 +26,45 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
-  console.log(cardData);
-
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item md={4} color="red" height="140" width="100">
-          <Grid container spacing={2}>
-            {cardData.map((card) => {
-              return (
-                <CardComponent
-                  key={card.id}
-                  title={card.title}
-                  links={card.links}
-                />
-              );
-            })}
-          </Grid>
+          {cardData1.map((card) => {
+            return (
+              <CardComponent
+                md={4}
+                key={card.id}
+                title={card.title}
+                links={card.links}
+              />
+            );
+          })}
         </Grid>
         <Grid item md={4} color="red" height="140" width="100">
-          <Grid container spacing={2}>
-            {cardData.map((card) => {
-              return (
-                <CardComponent
-                  key={card.id}
-                  title={card.title}
-                  links={card.links}
-                />
-              );
-            })}
-          </Grid>
+          {cardData2.map((card) => {
+            return (
+              <CardComponent
+                key={card.id}
+                title={card.title}
+                links={card.links}
+              />
+            );
+          })}
+        </Grid>
+        <Grid item md={4} color="red" height="140" width="100">
+          {cardData3.map((card) => {
+            return (
+              <CardComponent
+                md={4}
+                key={card.id}
+                title={card.title}
+                links={card.links}
+              />
+            );
+          })}
         </Grid>
       </Grid>
     </div>
