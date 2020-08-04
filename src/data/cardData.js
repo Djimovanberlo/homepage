@@ -1,35 +1,30 @@
 import {
-  uniLeidenArray,
-  onderwAfstandArray,
-  taalkundeArray,
-  japansArray,
-  array3_1,
-  array3_2,
+  businessArray,
+  projectsArray,
+  codeSourcesArray,
+  mediaArray,
+  googleArray,
+  gamesArray,
+  miscSourcesArray,
 } from "./linkData";
 
 export const cardData1 = [
   {
     id: 1,
-    title: "Universiteit Leiden",
-    links: uniLeidenArray,
+    title: "Business",
+    links: businessArray,
   },
-  { id: 2, title: "Onderwijs op afstand", links: onderwAfstandArray },
+  { id: 2, title: "Projects", links: projectsArray },
+  { id: 3, title: "Code soures", links: codeSourcesArray },
 ];
 
 export const cardData2 = [
   {
     id: 1,
-    title: "Taal en taalkunde",
-    links: taalkundeArray,
+    title: "Media",
+    links: mediaArray,
   },
-  { id: 3, title: "Japans", links: japansArray },
-];
-
-export const cardData3 = [
-  {
-    id: 1,
-    title: "3",
-    links: array3_1,
-  },
-  { id: 3, title: "33", links: array3_2 },
+  { id: 2, title: "Google", links: googleArray },
+  { id: 3, title: "Games", links: gamesArray },
+  { id: 4, title: "Misc sources", links: miscSourcesArray },
 ];

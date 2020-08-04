@@ -24,24 +24,15 @@ const CardComponent = (props) => {
         </Typography>
 
         {links.map((singleLink) => {
-          // console.log("SINGLELINK", singleLink);
           return (
             <Typography variant="body2" component="p" key={singleLink.id}>
-              <Link
-                href={singleLink.link}
-                target="_blank"
-                // onClick={preventDefault()}
-                color="inherit"
-              >
+              <Link href={singleLink.link} target="_blank" color="inherit">
                 {singleLink.name}
               </Link>
             </Typography>
           );
         })}
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 };
