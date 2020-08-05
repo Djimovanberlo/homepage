@@ -1,19 +1,12 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import { CardMedia, Box } from "@material-ui/core";
 
 import { cardData1, cardData2 } from "../data/cardData";
-import { cardStyles } from "../styles/styles";
 import CardComponent from "./CardComponent";
 
 const BookMarkComponent = () => {
-  const useStyles = makeStyles(cardStyles);
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
+    <div>
       <Grid container>
         <Grid
           container

@@ -15,7 +15,18 @@ export const cardStyles = {
   title: {
     fontSize: 14,
   },
+  media: {
+    height: 550,
+    flexGrow: 1,
+  },
   pos: {
     marginBottom: 12,
+  },
+  hover: {
+    opacity: 0,
+    transition: "0.5s",
+    "&:hover": {
+      opacity: 1,
+    },
   },
 };
