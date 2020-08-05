@@ -16,13 +16,25 @@ export const cardStyles = {
     fontSize: 14,
   },
   media: {
-    height: 550,
+    position: "relative",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    margin: 0,
+    overflow: "auto",
+    height: 800,
     flexGrow: 1,
   },
   pos: {
     marginBottom: 12,
   },
   hover: {
+    position: "absolute",
+    margin: 5,
+    bottom: 0,
+    left: 0,
+    zIndex: 9,
     opacity: 0,
     transition: "0.5s",
     "&:hover": {

@@ -15,20 +15,18 @@ const App = () => {
     <div className={classes.root}>
       <Grid container>
         <Grid container direction="row" justify="space-evenly">
-          <Box width={1} align="center">
-            <CardMedia className={classes.media} image={testImg} />
-          </Box>
-        </Grid>
-        <Grid
-          className={classes.hover}
-          container
-          direction="row"
-          justify="space-evenly"
-          alignitems="stretch"
-        >
-          <Fade>
+          {/* <Box width={1} align="center"> */}
+          <CardMedia className={classes.media} image={testImg} />
+          <Grid
+            className={classes.hover}
+            container
+            direction="row"
+            justify="space-evenly"
+            alignitems="stretch"
+          >
             <BookMarkComponent />
-          </Fade>
+          </Grid>
+          {/* </Box> */}
         </Grid>
       </Grid>
     </div>
