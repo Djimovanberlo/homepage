@@ -71,6 +71,16 @@ export const codeSourcesArray = [
   },
 ];
 
+export const miscSourcesArray = [
+  { id: 1, name: "Lorem picsum", link: "https://picsum.photos/" },
+  { id: 2, name: "Pixl X", link: "https://picsum.photos/" },
+  {
+    id: 3,
+    name: "Canva",
+    link: "https://www.canva.com/",
+  },
+];
+
 export const mediaArray = [
   {
     id: 1,
@@ -136,12 +146,11 @@ export const gamesArray = [
   },
 ];
 
-export const miscSourcesArray = [
-  { id: 1, name: "Lorem picsum", link: "https://picsum.photos/" },
-  { id: 2, name: "Pixl X", link: "https://picsum.photos/" },
+export const foodArray = [
   {
-    id: 3,
-    name: "Canva",
-    link: "https://www.canva.com/",
+    id: 1,
+    name: "Persian cookbook",
+    link:
+      "file:///home/djimo/Downloads/Persiana__Recipes_from_the_Middle_East_n_b_-_Sabrina_Ghayour.pdf",
   },
 ];

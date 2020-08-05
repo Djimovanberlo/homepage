@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 
-import { cardStyles } from "../styles";
+import { cardStyles } from "../styles/styles";
 
 const CardComponent = (props) => {
   const useStyles = makeStyles(cardStyles);

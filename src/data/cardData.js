@@ -2,10 +2,11 @@ import {
   businessArray,
   projectsArray,
   codeSourcesArray,
+  miscSourcesArray,
   mediaArray,
   googleArray,
   gamesArray,
-  miscSourcesArray,
+  foodArray,
 } from "./linkData";
 
 export const cardData1 = [
@@ -16,6 +17,7 @@ export const cardData1 = [
   },
   { id: 2, title: "Projects", links: projectsArray },
   { id: 3, title: "Code soures", links: codeSourcesArray },
+  { id: 4, title: "Misc sources", links: miscSourcesArray },
 ];
 
 export const cardData2 = [
@@ -26,5 +28,5 @@ export const cardData2 = [
   },
   { id: 2, title: "Google", links: googleArray },
   { id: 3, title: "Games", links: gamesArray },
-  { id: 4, title: "Misc sources", links: miscSourcesArray },
+  { id: 4, title: "Food", links: foodArray },
 ];
